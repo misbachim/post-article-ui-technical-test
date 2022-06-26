@@ -1,8 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import listArticleReducer from './listArticleSlice';
+import articleReducer from './articleSlice';
+import sidebarReducer from './sidebarSlice';
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    listArticle: listArticleReducer,
+    article: articleReducer,
+    sidebar: sidebarReducer,
   },
 });
